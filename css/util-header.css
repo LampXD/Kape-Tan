@@ -1,0 +1,69 @@
+/* ===========================Global Header================================= */
+/* note: Ung header natin nasa About.css pa kapag nagustuhan nyo ung design ilipat nyo dito tapos pag may gusto kayo i modify gawin nyona */
+/* ===========================Header================================= */
+header.header {
+    background-color: #1d0000;
+
+    /* This layers a low-opacity coffee image on top of the black background */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/coffeebeans.png');
+    background-size: cover;          /* Covers the header nicely */
+    background-position: right center; /* Pushes the coffee image towards the right side */
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 120px;          /* Header stays thin */
+    margin: 0;
+    padding: 0 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    overflow: visible;     /* Allows the logo to extend past the header box */
+    position: relative;
+    z-index: 10;
+}
+
+/* Make the logo big and wide */
+header.header img {
+    width: 200px;          /* Desired large width */
+    height: 170px;          /* Keeps perfect proportions */
+    display: block;
+    margin: 0;
+    padding-top: 20px;
+
+    filter: drop-shadow(0px 0px 8px rgba(253, 248, 242, 0.9));
+
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+header.header img:hover {
+    transform: scale(1.12); /* Slightly enlarges the logo on hover */
+    filter: drop-shadow(0px 0px 16px rgba(253, 248, 242, 1)) brightness(1.15); /* Enhances the shadow on hover */
+}
+/* ==================header NAV================ */
+header.header .header-nav{
+    display: flex;
+    padding-right: 20px; 
+    gap: 20px; /* Adds space between navigation links */
+}
+
+header.header .header-nav a {
+    color: #FDF8F2; /* Warm Cream color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover & Active Link state - Caramel Tan Glow */
+header.header .header-nav a:hover,
+header.header .header-nav a.active {
+    color: #C88A4A; /* Caramel Tan */
+    text-shadow: 0 0 8px rgba(200, 138, 74, 0.6);
+}
+/* ==============Header NAV================ */
+/* ===========================Header================================= */
